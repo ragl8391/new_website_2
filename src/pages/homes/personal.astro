@@ -1,0 +1,113 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import { getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: "Week 2 Updates",
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    id="hero"
+    title="Week 2 Updates"
+  >
+    <Fragment slot="subtitle">
+      Welcome! Below you can find updates on my professional development project:
+    </Fragment>
+  </Hero>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="about"
+    columns={3}
+    items={[
+      {
+        icon: 'tabler:brand-dribbble',
+        callToAction: {
+          target: '_blank',
+          text: 'Dribbble',
+          href: '#',
+        },
+      },
+      {
+        icon: 'tabler:brand-behance',
+        callToAction: {
+          target: '_blank',
+          text: 'Behance',
+          href: '#',
+        },
+      },
+      {
+        icon: 'tabler:brand-pinterest',
+        callToAction: {
+          target: '_blank',
+          text: 'Pinterest',
+          href: '#',
+        },
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Weekly Planning Checklist</h2>
+      <p>
+        <li>Create and update website</li>
+        <li>Add Flake8 extension to VS Code</li>
+        <li>Download cpplint</li>
+        <li>Download cppcheck</li>
+        <li>Add cppcheck/cpplint extensions on VS Code</li>
+        <li>Research Git</li>
+        <li>Summarize Week 2 Research</li>
+      </p>
+      <br />
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">What did you do last week?</h3>
+      <p>
+        Last week I posted my initial idea for a project to piazza, from which I received useful feedback. 
+        I also spent some time going through the Git tutorial posted by another student to further familiarize myself with it.
+        Additionally, I began looking for publicly-available Python and C++ files that I might be able to do some 
+        code cleanup for.
+      </p>
+      <br />
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">What do you plan to do this week?</h3>
+      <p>
+        This week I plan to install the Flake8 extension on VS Code, as well as cpplint and cppcheck. I also want to do 
+        research related to adding my own .config files for specific standards checks that I could create myself. 
+        Additionally, I would like to research CI/CD pipelines in Gitlab and possibly incorporate that into my project.
+      </p>
+      <br />
+         <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Are there any impediments in your way?</h3>
+      <p>
+        Time! I am taking two classes this semester and working full time, so I just need to be really mindful about 
+        meeting weekly due dates.
+      </p>
+      <br />
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Reflection on the process you used last week, how can you make the process work better?</h3>
+      <p>
+        I think I can be really specific about planning the tasks I need to complete each day. While I am trying to get 
+        everything done on weeknights, I may need to incorporate time on the weekends to get ahead during particularly 
+        busy weeks.
+
+      </p>
+      <br />
+    </Fragment>
+  </Content>
