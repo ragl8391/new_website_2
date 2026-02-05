@@ -1,6 +1,4 @@
 import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
-import Week2 from 'src/pages/homes/week2.md';
-import week2research from 'src/pages/landing/week2research.md';
 
 export const headerData = {
   links: [
