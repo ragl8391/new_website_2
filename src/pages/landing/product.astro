@@ -16,11 +16,11 @@ const metadata = {
     tagline="Research Updates"
     title="CI/CD Pipelines"
     subtitle="Overview of the important software development component"
-    items={[
+    actions={[
       {
-        title: "What is CI/CD?"
+        title: "What is CI/CD?",
         description: "CI stands for Continuous Integration, and CD stands for Continuous Delivery/Deployment",
-      }
+      },
     ]}
     
     image={{
@@ -33,18 +33,21 @@ const metadata = {
     tagline="More Info"
     title="What Are They?"
     actions={[
+      {
       text: "CI stands for Continuous Integration, and CD stands for Continuous Delivery/Deployment",
+      },
 
     ]}
-
+    image={{
+      src: '/landing/after_ci_cd.webp',
+      alt: 'After CI/CD (Source: Geeks for Geeks)',
+    }}
   />
 
   <CallToAction
     title="Coming soon"
     subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
-      image={{
-      src: '/landing/after_ci_cd.webp',
-      alt: 'After CI/CD (Source: Geeks for Geeks)',
-    }}
+
+
   />
 </Layout>
