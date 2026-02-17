@@ -5,7 +5,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Product Details Landing Page Demo',
+  title: 'CI/CD Research',
 };
 ---
 
@@ -13,16 +13,18 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero
-    tagline="Product Details Demo"
-    title="Product Landing Page: Showcase with Precision and Passion!"
-    subtitle="Step-by-step guide to designing a Landing Page that highlights every facet of your product or service."
-    actions={[
-      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
-      { text: 'Learn more', href: '#' },
-    ]}
+    tagline="Research Updates"
+    title="CI/CD Pipelines"
+    subtitle="Overview of the important software development component"
+    
     image={{
-      src: 'https://images.unsplash.com/photo-1473188588951-666fce8e7c68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2174&q=80',
-      alt: 'A spotlight on a product. Product Details Landing Page Demo',
+      src: 'https://media.geeksforgeeks.org/wp-content/uploads/20260210152550804274/before_ci_cd.webp',
+      alt: 'Before CI/CD (Source: Geeks for Geeks)',
+    }}
+
+    image={{
+      src: 'https://media.geeksforgeeks.org/wp-content/uploads/20260210143721133952/after_ci_cd.webp',
+      alt: 'After CI/CD (Source: Geeks for Geeks)',
     }}
   />
 
