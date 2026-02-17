@@ -6,7 +6,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
-  title: 'CI/CD Research',
+  title: 'CI-CD',
 };
 ---
 
@@ -30,13 +30,11 @@ const metadata = {
         title: "What are the core components of CI/CD?",
         description: "Continuous Integration automatically tests each commit, and rejects a code build if a test fails. Continuous Delivery automatically deploys passing code to a staging area. Continuous Deployment automically deplays passing code to production.",
       },
+      {
+        title: "Sources:",
+        description: "https://www.geeksforgeeks.org/devops/what-is-ci-cd/",
+      },
     ]}
   />
 
-  <CallToAction
-    title="Coming soon"
-    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
-
-
-  />
 </Layout>
