@@ -32,7 +32,7 @@ export const headerData = {
         },
         {
           text: 'CI/CD Pipelines',
-          href: getPermalink('/landing/click-through'),
+          href: getPermalink('/landing/product'),
         },
         {
           text: 'Configuration Files',
