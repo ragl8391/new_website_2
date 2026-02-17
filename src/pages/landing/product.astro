@@ -3,6 +3,7 @@ import Layout from '~/layouts/LandingLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
   title: 'CI/CD Research',
@@ -12,11 +13,11 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero2 Widget ******************* -->
 
-  <Hero
+  <FAQs
     tagline="Research Updates"
     title="CI/CD Pipelines"
     subtitle="Overview of the important software development component"
-    actions={[
+    items={[
       {
         title: "What is CI/CD?",
         description: "CI stands for Continuous Integration, and CD stands for Continuous Delivery/Deployment",
