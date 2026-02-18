@@ -1,0 +1,66 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Week 5 Updates',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero>
+    <Fragment slot="title">
+      Welcome to <span class="hidden sm:inline">Week 5</span> Updates <span
+        class="text-accent dark:text-white"></span
+      >
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Scroll to read more about this week's work!
+    </Fragment>
+  </Hero>
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Weekly Summary"
+    items={[
+      {
+        title: 'What did you do last week?',
+        description:
+          'Last week I completed three peer reviews, and I completed some research for CI/CD Pipelines. I continued preparing my personal website as well.',
+      },
+      {
+        title: 'What do you plan to do this week?',
+        description:
+          'I plan to add the “about me” section to my personal website and complete my configuration file.  I also plan to include a research summary about configuration files to my website.',
+      },
+      {
+        title: 'Are there any impediments in your way?',
+        description:
+          'I didn’t get as much done regarding the configuration files last week as I had hoped, so I will be playing catch-up to get back on track. Adding things to the website with VS Code tends to be more time-consuming than I anticipate each week, and I am hoping to refocus time and energy on the core code for my project this week.',
+      },
+      {
+        title: 'Reflection on the process you used last week, how can you make the process work better?',
+        description:
+           'I think creating a repository specifically for my project (separate from my website repository) will help me better manage and organize my workflow. I should have a little more time this weekend to get the configuration file totally done I think! If I have time, I might go back and expand/modify the research summaries on my website, but my project code will be the priority.',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
