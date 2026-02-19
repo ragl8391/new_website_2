@@ -4,7 +4,7 @@ export const headerData = {
   links: [
     {
       text: 'About Me',
-      links: [,
+      links: [
       {
         text: 'Overview',
         href: getPermalink('/homes/week3'),
@@ -17,7 +17,7 @@ export const headerData = {
         text: 'GitHub Portfolio',
         href: getPermalink('/homes/week3'),
       },
-      ]
+      ],
     },
     {
       text: 'Weekly Status Updates',
