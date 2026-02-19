@@ -3,6 +3,27 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
+      text: 'About Me',
+      links: [,
+      {
+        text: 'Overview',
+        href: getPermalink(),
+      },
+      {
+        text: 'Education',
+        href: getPermalink(),
+      },
+      {
+        text: 'Resume',
+        href: getPermalink(),
+      },
+      {
+        text: 'GitHub Portfolio',
+        href: getPermalink(),
+      },
+      ]
+    },
+    {
       text: 'Weekly Status Updates',
       links: [
         {
