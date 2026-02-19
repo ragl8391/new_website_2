@@ -14,7 +14,7 @@ export const headerData = {
         href: getPermalink('/resume'),
       },
       {
-        text: 'GitHub Portfolio',
+        text: 'GitHub Profile',
         href: getPermalink('portfolio'),
       },
       ],
