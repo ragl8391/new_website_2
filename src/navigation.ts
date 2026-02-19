@@ -7,15 +7,15 @@ export const headerData = {
       links: [
       {
         text: 'Overview',
-        href: getPermalink('/homes/week3'),
+        href: getPermalink('/about'),
       },
       {
         text: 'Resume',
-        href: getPermalink('/homes/week3'),
+        href: getPermalink('/contact'),
       },
       {
         text: 'GitHub Portfolio',
-        href: getPermalink('/homes/week3'),
+        href: getPermalink('/index'),
       },
       ],
     },
@@ -24,7 +24,7 @@ export const headerData = {
       links: [
         {
           text: 'Week 2',
-          href: getPermalink('homes/week_2'),
+          href: getPermalink('/homes/week_2'),
         },
         {
           text: 'Week 3',
