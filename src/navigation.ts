@@ -15,7 +15,7 @@ export const headerData = {
       },
       {
         text: 'GitHub Portfolio',
-        href: getPermalink('/index'),
+        href: getPermalink('/contact'),
       },
       ],
     },
