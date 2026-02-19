@@ -7,19 +7,15 @@ export const headerData = {
       links: [,
       {
         text: 'Overview',
-        href: getPermalink(),
-      },
-      {
-        text: 'Education',
-        href: getPermalink(),
+        href: getPermalink('/homes/week3'),
       },
       {
         text: 'Resume',
-        href: getPermalink(),
+        href: getPermalink('/homes/week3'),
       },
       {
         text: 'GitHub Portfolio',
-        href: getPermalink(),
+        href: getPermalink('/homes/week3'),
       },
       ]
     },
