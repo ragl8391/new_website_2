@@ -1,0 +1,22 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Contact',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline="Contact" title="Let's Connect!" />
+
+  <ContactUs
+    title="Below is a link to my GitHub Profile, where you can find samples of my work:"
+    subtitle="https://github.com/ragl8391"
+  />
+
+</Layout>
