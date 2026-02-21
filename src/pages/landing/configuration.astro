@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'CI-CD',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <FAQs
+    tagline="Research Updates"
+    title="CI/CD Pipelines"
+    subtitle="Overview of the important software development component"
+    items={[
+      {
+        title: "What is a configuration file?",
+        description: "Configuration files affect the settings of how a person interacts with a system and vice versa. The most common form of configuration file is YAML.",
+      },
+      {
+      title: "What is a YAML file?",
+      description: "YAML files are in the form of a list of elements, often in the form of key-value pairs.",
+      },
+      {
+        title: "How does this apply to a CI/CD Pipeline?",
+        description: "The YAML file .",
+      },
+      {
+        title: "Sources:",
+        description: "https://opensource.com/article/21/6/what-config-files, https://blogs.perficient.com/2024/02/26/building-re-usable-pipeline-templates-in-github-actions-workflows/#:~:text=In%20GitHub%20the%20portal%20offers%20a%20similar%20secrets%20option:%20https://docs.github.com/en/actions/security%2Dguides/using%2Dsecrets%2Din%2Dgithub%2Dactions%23about%2Dsecrets",
+      },
+    ]}
+  />
+
+</Layout>

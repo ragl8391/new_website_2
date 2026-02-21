@@ -53,6 +53,7 @@ export const headerData = {
         },
         {
           text: 'Configuration Files',
+          href: getPermalink('/landing/configuration')
         },
         {
           text: 'Flake8',
