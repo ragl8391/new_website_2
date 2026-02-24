@@ -1,0 +1,66 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Week 6 Updates',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero>
+    <Fragment slot="title">
+      Welcome to <span class="hidden sm:inline">Week 6</span> Updates <span
+        class="text-accent dark:text-white"></span
+      >
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Scroll to read more about this week's work!
+    </Fragment>
+  </Hero>
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Weekly Summary"
+    items={[
+      {
+        title: 'What did you do last week?',
+        description:
+          'Last week I submitted my personal website, and I also created a project repo where I have begun to lint the Python files I selected. I cloned the repo into VS Code, and ran Flake8 on 6 files to start. I also adjusted my VS Code JSON file to suppress warnings that were not relevant to the edits I was making to the code (such maximum line length limit and import warnings that were a by-product of cloning a local copy of the repo). I also added a GitHub configuration file specific for Python files, but still need to revise it so it is better suited to the repo I am working with.',
+      },
+      {
+        title: 'What do you plan to do this week?',
+        description:
+          'This week, I plan to continue linting python files. There are about 60 files total in the repo I cloned, and my goal is to get through about half this week and half next week. Especially since most edits are fast, I think this is a realistic goal.',
+      },
+      {
+        title: 'Are there any impediments in your way?',
+        description:
+          'I am interested in contributing my linting to the open-source project from which the files were acquired. I posted a comment expressing my interest in helping with linting on the Pytorch Task Board but have not heard back yet. It looks like someone else commented in October with no apparent response, so the lack of communication might prevent me from my goal of pushing linting changes to the main repo where the files are being used. I also need to install PytorchWildlife, which is associated with the files I’m linting.',
+      },
+      {
+        title: 'Reflection on the process you used last week, how can you make the process work better?',
+        description:
+           'I found myself spending more time working directly with the files I was linting than the configuration file, which I found to be a stronger use of my time. I think I will continue to adjust the configuration file so it is better suited to the repo I cloned, now that I am more familiar with it.',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
