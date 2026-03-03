@@ -1,0 +1,66 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Week 7 Updates',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero>
+    <Fragment slot="title">
+      Welcome to <span class="hidden sm:inline">Week 7</span> Updates <span
+        class="text-accent dark:text-white"></span
+      >
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Scroll to read more about this week's work!
+    </Fragment>
+  </Hero>
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Weekly Summary"
+    items={[
+      {
+        title: 'What did you do last week?',
+        description:
+          'Last week I continued to edit Python files using Flake8. I got nearly 20 files completed',
+      },
+      {
+        title: 'What do you plan to do this week?',
+        description:
+          'I plan to spend a lot of time linting with Flake8, completing the remaining 40 files I want to lint. I will also be writing my Project Update Report!',
+      },
+      {
+        title: 'Are there any impediments in your way?',
+        description:
+          'I had a midterm for another class over the weekend, and I am still working full-time, so I am always worried about time.',
+      },
+      {
+        title: 'Reflection on the process you used last week, how can you make the process work better?',
+        description:
+           'Depending on how much I can get done during the week, I might need to complete more linting over the weekend. I would like to be set up to then start my C++ files by the start of next week. I might try linting a couple of C++ files early so that I can talk about it more in my update report.',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
