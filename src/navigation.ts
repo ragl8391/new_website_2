@@ -50,6 +50,10 @@ export const headerData = {
           text: 'Week 8',
           href: getPermalink('/homes/week8'),
         },
+        {
+          text: 'Week 9',
+          href: getPermalink('/homes/week9'),
+        },
       ],
     },
     {

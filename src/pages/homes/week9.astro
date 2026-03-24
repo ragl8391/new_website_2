@@ -1,0 +1,66 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Week 9 Updates',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero>
+    <Fragment slot="title">
+      Welcome to <span class="hidden sm:inline">Week 9</span> Updates <span
+        class="text-accent dark:text-white"></span
+      >
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Scroll to read more about this week's work!
+    </Fragment>
+  </Hero>
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Weekly Summary"
+    items={[
+      {
+        title: 'What did you do last week?',
+        description:
+          'Last week was spring break, so I was mostly trying to get caught up. I am just about done with Python linting, and have some great research resources regarding general linting/error trends. I also created a script which organizes an output of the Flake8 errors and another script which visualizes them in a graph.',
+      },
+      {
+        title: 'What do you plan to do this week?',
+        description:
+          'This week I plan to begin linting my C++ files, but first summarizing the major errors being flagged prior to cleaning them up. This will probably require another script. I will tie this into the research findings to compare my work with trends reported by others. Additionally, I still need to complete my Lifelong Learning Resources assignment, which I hope to have done by Tuesday evening.',
+      },
+      {
+        title: 'Are there any impediments in your way?',
+        description:
+          'Apologies for repeating myself so much in this question, but it is always the time component that gets in the way of my work. I had a project for another class due this week as well, which has taken up more of my time outside of my job. I am planning larger chunks of time Tuesday and Wednesday to get more work done for Professional Development though!',
+      },
+      {
+        title: 'Reflection on the process you used last week, how can you make the process work better?',
+        description:
+           'Beyond the technical tasks of linting, the main thing I would like to prioritize is finding a meaningful way to tie my findings into general research to further inform the issues that linting most commonly addresses and why that is important.',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
