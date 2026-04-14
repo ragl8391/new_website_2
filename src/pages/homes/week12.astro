@@ -1,0 +1,66 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Week 12 Updates',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero>
+    <Fragment slot="title">
+      Welcome to <span class="hidden sm:inline">Week 12</span> Updates <span
+        class="text-accent dark:text-white"></span
+      >
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Scroll to read more about this week's work!
+    </Fragment>
+  </Hero>
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Weekly Summary"
+    items={[
+      {
+        title: 'What did you do last week?',
+        description:
+          'Last week I cloned the new C++ repository I chose to work with and summarized the most common cpplint and cppcheck issue IDs. I continued to make significant progress on my final report, drafting some of the results, discussion, and conclusion. I will add information about my C++ linted files as they are completed.',
+      },
+      {
+        title: 'What do you plan to do this week?',
+        description:
+          'This week I plan to focus on linting C++ files so they pass cpplint and cppcheck tests. I have family visiting this weekend, so I am focused on getting 10-20 files linted before Friday.',
+      },
+      {
+        title: 'Are there any impediments in your way?',
+        description:
+          'Knowing I will not have the usual work time this weekend, I am focusing on getting tasks done earlier in the week. This was also why I focused last weekend and the weekend prior on getting the bulk of the writing done for the final report, so I would not feel like I was rushing just a few days before it was due.',
+      },
+      {
+        title: 'Reflection on the process you used last week, how can you make the process work better?',
+        description:
+          'Planning ahead in general has been extremely helpful. I have set a specific number of files to lint each day as a goal so that I can stay on track with the last critical component of my project.',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
